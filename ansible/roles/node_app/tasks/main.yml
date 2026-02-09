@@ -1,0 +1,17 @@
+---
+- name: Ensure git is present
+  apt:
+    name: git
+    state: present
+    update_cache: yes
+  become: yes
+
+- name: Ensure nodejs is present
+  apt:
+    name: nodejs
+    state: present
+    update_cache: yes
+  become: yes
+
+- name: Include deploy tasks
+  import_tasks: deploy.yml
