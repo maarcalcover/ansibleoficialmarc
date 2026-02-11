@@ -49,4 +49,4 @@ jobs:
           cd ansible
           ansible-playbook playbooks/deploy.yml -i inventories/production.yml \
           --private-key ~/.ssh/id_ed25519 \
-          -e "repo_url=https://github.com/maarcalcover/ansibleoficial.git"
+          -e "repo_url=https://github.com/maarcalcover/marcexamenansible2.git"
